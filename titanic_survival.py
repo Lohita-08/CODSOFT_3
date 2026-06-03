@@ -37,20 +37,13 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
 
-from sklearn.metrics import confusion_matrix
+from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 import matplotlib.pyplot as plt
 
 cm = confusion_matrix(y_test, y_pred)
 
-print("Confusion Matrix:")
-print(cm)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm)
+disp.plot()
 
-plt.imshow(cm)
-plt.title("Confusion Matrix")
-plt.colorbar()
-plt.xlabel("Predicted")
-plt.ylabel("Actual")
-plt.show()
-
-plt.savefig("confusion_matrix.png")
+plt.savefig("confusion_matrix.png", bbox_inches="tight")
 plt.show()
