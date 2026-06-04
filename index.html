@@ -1,31 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Titanic Survival Prediction Project</title>
+    <title>Titanic Survival Prediction</title>
+
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 40px;
-            background-color: #f4f6f9;
-            color: #333;
+            font-family: Arial;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            margin: 0;
+            padding: 0;
         }
 
         .container {
-            max-width: 900px;
-            margin: auto;
             background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
         }
 
         h1 {
-            color: #0056b3;
             text-align: center;
+            color: #007bff;
+        }
+
+        p {
+            text-align: center;
+            font-size: 16px;
         }
 
         h2 {
-            color: #444;
+            margin-top: 30px;
+            color: #333;
         }
 
         ul {
@@ -33,64 +40,71 @@
         }
 
         .accuracy {
-            font-size: 24px;
+            font-size: 26px;
             color: green;
             font-weight: bold;
         }
 
-        img {
-            width: 500px;
-            display: block;
-            margin: auto;
-            border-radius: 10px;
-            border: 2px solid #ddd;
+        .image-box {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        footer {
+        img {
+            width: 60%;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .footer {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 40px;
             color: gray;
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <h1>Titanic Survival Prediction Project</h1>
+        <h1>🚢 Titanic Survival Prediction Project</h1>
 
-    <p>
-        This project predicts whether a passenger survived the Titanic disaster
-        using Machine Learning algorithms in Python.
-    </p>
+        <p>
+            This project predicts whether a passenger survived the Titanic disaster
+            using Machine Learning algorithms in Python.
+        </p>
 
-    <h2>Tools Used</h2>
-    <ul>
-        <li>Python</li>
-        <li>Pandas</li>
-        <li>NumPy</li>
-        <li>Scikit-Learn</li>
-        <li>Matplotlib</li>
-    </ul>
+        <h2>🛠 Tools Used</h2>
+        <ul>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Scikit-Learn</li>
+            <li>Matplotlib</li>
+        </ul>
 
-    <h2>Project Files</h2>
-    <ul>
-        <li>titanic_survival.py</li>
-        <li>Titanic-Dataset.csv</li>
-        <li>confusion_matrix.png</li>
-    </ul>
+        <h2>📂 Project Files</h2>
+        <ul>
+            <li>titanic_survival.py</li>
+            <li>Titanic-Dataset.csv</li>
+            <li>confusion_matrix.png</li>
+        </ul>
 
-    <h2>Model Accuracy</h2>
-    <p class="accuracy">80.44%</p>
+        <h2>📊 Model Accuracy</h2>
+        <div class="accuracy">80.44%</div>
 
-    <h2>Confusion Matrix</h2>
-    <img src="./confusion_matrix.png" alt="Confusion Matrix" width="500">
+        <h2>📉 Confusion Matrix</h2>
 
-    <footer>
-        Created by Lohita | CODSOFT Internship Project
-    </footer>
+        <div class="image-box">
+            <img src="confusion_matrix.png" alt="Confusion Matrix">
+        </div>
 
-</div>
+        <div class="footer">
+            Created by Lohita | CODSOFT Internship Project
+        </div>
+
+    </div>
 
 </body>
 </html>
